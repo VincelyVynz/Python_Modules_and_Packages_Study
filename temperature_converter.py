@@ -10,7 +10,7 @@ def celsius_to_fahrenheit(celsius):
          float: Equivalent temperature in Fahrenheit.
      """
     fahrenheit = (9/5) * celsius + 32
-    return fahrenheit
+    return f"{fahrenheit}°F."
 
 def fahrenheit_to_celsius(fahrenheit):
     """
@@ -23,4 +23,4 @@ def fahrenheit_to_celsius(fahrenheit):
          float: Equivalent temperature in Celsius.
     """
     celsius = (fahrenheit - 32) * 5/9
-    return celsius
+    return f"{celsius}°C."
