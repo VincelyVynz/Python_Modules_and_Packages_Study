@@ -7,5 +7,3 @@ This folder has a few small files made to try things out:
 - temperature_converter.py — Celsius/Fahrenheit converter. 
 - date_time_study.py — prints current date with time.
 - main.py - testing ground file.
-
-
