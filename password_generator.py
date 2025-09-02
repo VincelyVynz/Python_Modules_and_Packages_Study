@@ -13,9 +13,9 @@ def generate_password(c=4, d=3, s=3):
     Generates a random password.
 
     Args:
-        c (int): Number of alphabet characters to include.
-        d (int): Number of digits to include.
-        s (int): Number of special characters to include.
+        c (int): Number of alphabet characters to include. Default set to 4.
+        d (int): Number of digits to include. Default set to 3.
+        s (int): Number of special characters to include. Default set to 3.
 
     Returns:
         str: A randomly generated password combining letters, digits, and special characters.
