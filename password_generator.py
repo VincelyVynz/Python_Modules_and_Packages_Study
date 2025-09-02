@@ -8,33 +8,35 @@ alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n
              'V', 'W', 'X', 'Y', 'Z']
 
 
-def generate_password(c, d, s):
+def generate_password(c=4, d=3, s=3):
+    """
+    Generates a random password.
+
+    Args:
+        c (int): Number of alphabet characters to include.
+        d (int): Number of digits to include.
+        s (int): Number of special characters to include.
+
+    Returns:
+        str: A randomly generated password combining letters, digits, and special characters.
+    """
     pd_list = []
 
     for _ in range(c):
         char = random.choice(alphabets)
-        if char not in pd_list:
-            pd_list.append(char)
+        pd_list.append(char)
 
     for _ in range(d):
         char = random.choice(digits)
-        if char not in pd_list:
-            pd_list.append(char)
+        pd_list.append(char)
 
     for _ in range(s):
         char = random.choice(special_chars)
-        if char not in pd_list:
-            pd_list.append(char)
+        pd_list.append(char)
 
-    print(pd_list)
     random.shuffle(pd_list)
-    print(pd_list)
     pd_str = "".join(pd_list)
-    print(pd_str)
+    return pd_str
 
 
-#Testing
-generate_password(c=3, d=2, s=1)
-generate_password(c=3, d=2, s=1)
-generate_password(c=3, d=2, s=1)
 
